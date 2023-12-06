@@ -1,0 +1,9 @@
+{
+	"name": "Mohism",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "06914a46-806f-47a5-a80c-257b01d6d844",
+		"tenantId": "9420c2bc-8b39-47ab-9903-81fb4de13a5f"
+	}
+}

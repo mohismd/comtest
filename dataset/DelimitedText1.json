@@ -1,0 +1,65 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Frost-data-csv.txt",
+				"fileSystem": "landing"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "referenceTime",
+				"type": "String"
+			},
+			{
+				"name": "elementId",
+				"type": "String"
+			},
+			{
+				"name": "value",
+				"type": "String"
+			},
+			{
+				"name": "unit",
+				"type": "String"
+			},
+			{
+				"name": "timeOffset",
+				"type": "String"
+			},
+			{
+				"name": "timeResolution",
+				"type": "String"
+			},
+			{
+				"name": "timeSeriesId",
+				"type": "String"
+			},
+			{
+				"name": "performanceCategory",
+				"type": "String"
+			},
+			{
+				"name": "exposureCategory",
+				"type": "String"
+			},
+			{
+				"name": "qualityCode",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
